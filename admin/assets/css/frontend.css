@@ -1,10 +1,17 @@
 #q-and-a-repeatables ul,
 .entry-content #q-and-a-repeatables h2{
+	background: #fff;
 	border: 0px;
 	margin: 0;
 }
+#q-and-a-repeatables li:nth-of-type(odd) h2{
+	background: #f1f0f1;
+}
 #q-and-a-repeatables li{
+	display: block;
+	overflow: hidden;
 	padding: 12px 15px;
+	position: relative;
 }
 #q-and-a-repeatables li:nth-of-type(odd){
 	background: #f1f0f1;
@@ -13,7 +20,35 @@
 	list-style: none;
 }
 #q-and-a-repeatables li span{
-	display: none;
-	padding: 12px 0 0;
-	margin:0 ;
+	display: block;
+	margin:0;
+	padding-top: 12px;
+	position: absolute;
+	top: -300px;
+}
+/**
+ *
+ * Animation Stuff
+ *
+ */
+#q-and-a-repeatables li span.animate-down,
+#q-and-a-repeatables li span.animate-up{
+	position: relative;
+	transition: transform 0.25s ease-in-out;
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+
+#q-and-a-repeatables li span.animate-down{
+	transform: translate3d(0, 300px, 0);
+	-webkit-transform: translate3d(0, 300px, 0);
+}
+
+#q-and-a-repeatables li span.animate-up{
+	transform: translate3d(0, -300px, 0);
+	-webkit-transform: translate3d(0, -300px, 0);
+}
+
+#q-and-a-repeatables li span.span-visible{
+	position: relative;
+	top:0px;
 }
