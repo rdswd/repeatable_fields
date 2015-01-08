@@ -1,11 +1,19 @@
 #q-and-a-repeatables ul,
 .entry-content #q-and-a-repeatables h2{
-	margin-left: 0;
-	margin-right: 0;
+	border: 0px;
+	margin: 0;
+}
+#q-and-a-repeatables li{
+	padding: 12px 15px;
+}
+#q-and-a-repeatables li:nth-of-type(odd){
+	background: #f1f0f1;
 }
 #q-and-a-repeatables ul{
 	list-style: none;
 }
 #q-and-a-repeatables li span{
 	display: none;
+	padding: 12px 0 0;
+	margin:0 ;
 }
