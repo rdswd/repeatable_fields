@@ -1,0 +1,11 @@
+#q-and-a-repeatables ul,
+.entry-content #q-and-a-repeatables h2{
+	margin-left: 0;
+	margin-right: 0;
+}
+#q-and-a-repeatables ul{
+	list-style: none;
+}
+#q-and-a-repeatables li span{
+	display: none;
+}
